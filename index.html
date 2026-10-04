@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>금정떡방앗간 | 부산 동래 2대째 전통 수제 떡집</title>
+<meta name="description" content="떡 제조 경력 20년 어머니의 손맛을 아들이 잇는 2대째 전통 수제 떡집. 국산 상급쌀과 천연재료로 빚는 송편·쑥떡·가래떡, 백일·돌·개업·답례떡과 명절 선물세트. 부산 동래구 충렬대로108번길 73." />
+<meta name="theme-color" content="#161616" />
+
+<link rel="canonical" href="https://kjricecake-sample.lgt3232.workers.dev/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="금정떡방앗간" />
+<meta property="og:title" content="금정떡방앗간 · 2대째 이어가는 전통 수제 떡집" />
+<meta property="og:description" content="어머니의 손맛을 아들이 잇습니다. 부산 동래 수제 떡, 답례떡·명절 선물세트·단체 주문." />
+<meta property="og:url" content="https://kjricecake-sample.lgt3232.workers.dev/" />
+<meta property="og:image" content="https://kjricecake-sample.lgt3232.workers.dev/og-kj.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="ko_KR" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23D94926'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='700'%3E%EB%96%A1%3C/text%3E%3C/svg%3E" />
+
+<!-- 시안 도메인 = kjricecake-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 5곳 치환 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "금정떡방앗간",
+  "alternateName": "KOREAN RICE CAKE",
+  "description": "2대째 이어가는 전통 수제 떡집. 국산 상급쌀과 천연재료로 빚는 떡, 답례떡·명절 선물세트·단체 주문.",
+  "url": "https://kjricecake-sample.lgt3232.workers.dev/",
+  "image": "https://kjricecake-sample.lgt3232.workers.dev/og-kj.jpg",
+  "telephone": "+82-507-1397-7377",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "충렬대로108번길 73 1층",
+    "addressLocality": "동래구",
+    "addressRegion": "부산광역시",
+    "addressCountry": "KR"
+  },
+  "servesCuisine": ["떡", "식혜"],
+  "hasMap": "https://naver.me/x7nJoH1t",
+  "sameAs": [
+    "https://www.instagram.com/kj_ricecake/",
+    "https://blog.naver.com/count_down",
+    "https://smartstore.naver.com/kjddeokbang"
+  ],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "06:00", "closes": "18:00" }
+  ]
+}
+</script>
+
+<!-- Fonts (전부 OFL · 로컬 서브셋 self-host)
+     제목 = Yeon Sung(연성체): 로고 글씨와 같은 붓 손글씨 계열. 로고 원본 폰트는 확인 불가 → 가장 가까운 무료 폰트
+     본문 = Gowun Batang(고운바탕): 단정한 명조 -->
+<link rel="preload" as="font" type="font/woff2" href="kj-yeonsung.woff2" crossorigin />
+<style>
+@font-face{ font-family:"Yeon Sung"; font-style:normal; font-weight:400; font-display:swap; src:url("kj-yeonsung.woff2") format("woff2"); }
+@font-face{ font-family:"Gowun Batang"; font-style:normal; font-weight:400; font-display:swap; src:url("kj-gowun-400.woff2") format("woff2"); }
+@font-face{ font-family:"Gowun Batang"; font-style:normal; font-weight:700; font-display:swap; src:url("kj-gowun-700.woff2") format("woff2"); }
+
+/* ============================================================
+   금정떡방앗간 · "한옥 모던"
+   규칙 ① 바탕은 새하얀 흰색, 글은 먹(검정), 포인트는 로고의 다홍 하나
+        ② 모서리 직각 · 그림자 없음 · 아이콘 타일 없음 → 선(한지 위 먹선)과 여백으로 구분
+        ③ 한옥 문법 3가지만: 로고의 처마 곡선 · 세로쓰기 섹션 이름 · 다홍 낙관(도장)
+   ============================================================ */
+:root{
+  --paper:#FFFFFF;
+  --wash:#F5F5F5;      /* 교차 섹션 (중성 회색, R=G=B) */
+  --ink:#161616;       /* 먹 */
+  --ink-soft:#555555;  /* 흰 바탕 7.5:1 */
+  --line:#E2E2E2;
+  --red:#D94926;       /* 로고 '떡' 실측 · 흰 바탕 4.3:1 → 큰 글자·장식 전용 */
+  --red-ink:#B33A1B;   /* 작은 다홍 글씨용 · 5.9:1 */
+  --head:"Yeon Sung", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --body:"Gowun Batang", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --maxw:1160px;
+  --gut:clamp(20px,5vw,48px);
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{ margin:0; font-family:var(--body); color:var(--ink); background:var(--paper); line-height:1.85; letter-spacing:-.005em; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; text-decoration:none; }
+.wrap{ width:100%; max-width:var(--maxw); margin:0 auto; padding:0 var(--gut); }
+section[id]{ scroll-margin-top:70px; }
+h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; letter-spacing:-.01em; }
+
+/* ---------- 버튼 (직각) ---------- */
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:.85em 1.4em; font-family:var(--body); font-weight:700; font-size:.95rem; line-height:1.2; background:var(--ink); color:#fff; border:1px solid var(--ink); transition:background .2s ease, color .2s ease, border-color .2s ease; }
+.btn.red{ background:var(--red-ink); border-color:var(--red-ink); }
+.btn.line{ background:transparent; color:var(--ink); }
+.btn.line-w{ background:transparent; color:#fff; border-color:rgba(255,255,255,.7); }
+.btn:focus-visible, a:focus-visible{ outline:2px solid var(--red); outline-offset:3px; }
+@media (hover:hover){
+  .btn:hover{ background:var(--red-ink); border-color:var(--red-ink); color:#fff; }
+  .btn.red:hover{ background:var(--ink); border-color:var(--ink); }
+  .btn.line-w:hover{ background:#fff; color:var(--ink); border-color:#fff; }
+}
+
+/* ---------- 헤더 ---------- */
+.site-head{ position:sticky; top:0; z-index:50; background:rgba(255,255,255,.96); border-bottom:1px solid var(--line); }
+.site-head .wrap{ display:flex; align-items:center; justify-content:space-between; gap:16px; height:62px; }
+.brand img{ height:40px; width:auto; }
+.nav{ display:flex; align-items:center; gap:clamp(16px,2.4vw,30px); }
+.nav a:not(.btn){ font-size:.95rem; color:var(--ink-soft); }
+.nav a:not(.btn):hover{ color:var(--ink); }
+.nav .btn{ padding:.6em 1.1em; font-size:.88rem; }
+@media (max-width:860px){ .nav a:not(.btn){ display:none; } }
+
+/* ---------- 세로쓰기 섹션 이름 + 낙관 ---------- */
+.vlabel{ writing-mode:vertical-rl; font-family:var(--head); font-size:1.15rem; letter-spacing:.35em; color:var(--ink); display:flex; align-items:center; gap:14px; }
+.vlabel::after{ content:""; width:1px; height:56px; background:var(--ink); }
+.seal{ display:inline-grid; place-items:center; width:46px; height:46px; background:var(--red); color:#fff; font-family:var(--head); font-size:1rem; line-height:1.05; writing-mode:vertical-rl; letter-spacing:.05em; }
+
+/* ---------- 처마 구분선 (로고의 지붕 선) ---------- */
+.roof{ display:flex; justify-content:center; padding:clamp(64px,10vw,112px) 0 0; }
+.roof img{ width:clamp(120px,22vw,190px); opacity:.9; }
+
+/* ---------- 히어로 ---------- */
+.hero{ padding:clamp(36px,6vw,72px) 0 0; }
+.hero-grid{ display:grid; gap:36px; }
+.hero-text{ display:grid; grid-template-columns:auto 1fr; gap:20px; align-items:start; }
+.hero-text .vlabel{ font-size:1rem; color:var(--red-ink); }
+.hero-text .vlabel::after{ background:var(--red-ink); }
+.hero h1{ font-size:clamp(2.5rem,8.6vw,4.6rem); line-height:1.22; }
+.hero h1 em{ font-style:normal; color:var(--red); }
+.hero .lead{ margin:22px 0 0; font-size:clamp(1rem,2.6vw,1.12rem); color:var(--ink-soft); max-width:30em; }
+.hero-cta{ display:flex; flex-wrap:wrap; gap:10px; margin-top:30px; }
+.hero-meta{ display:flex; flex-wrap:wrap; gap:6px 22px; margin:28px 0 0; padding:14px 0 0; border-top:1px solid var(--line); font-size:.88rem; color:var(--ink-soft); }
+.hero-meta b{ color:var(--ink); font-weight:700; margin-right:6px; }
+/* 사진: 이중선 액자 + 다홍 낙관 */
+.frame{ position:relative; padding:10px; border:1px solid var(--ink); }
+.frame::before{ content:""; position:absolute; inset:4px; border:1px solid var(--line); pointer-events:none; }
+.frame img{ width:100%; aspect-ratio:4/3; object-fit:cover; }
+.frame .seal{ position:absolute; right:-12px; bottom:-14px; width:58px; height:58px; font-size:1.2rem; }
+
+/* ---------- 이야기 ---------- */
+.sec{ padding:clamp(56px,9vw,104px) 0 0; }
+.sec-head{ display:grid; grid-template-columns:auto 1fr; gap:20px; align-items:start; margin-bottom:clamp(26px,4vw,44px); }
+.sec-head h2{ font-size:clamp(1.9rem,5.6vw,3rem); line-height:1.3; }
+.sec-head p{ margin:12px 0 0; color:var(--ink-soft); max-width:36em; }
+.story-grid{ display:grid; gap:34px; }
+.story-photo img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+.story-text p{ margin:0 0 1.1em; }
+.story-text .quote{ font-family:var(--head); font-size:clamp(1.45rem,4vw,1.9rem); line-height:1.45; margin:0 0 22px; padding-left:18px; border-left:3px solid var(--red); }
+.facts{ display:grid; grid-template-columns:repeat(3,1fr); margin:30px 0 0; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
+.facts div{ padding:16px 8px; text-align:center; }
+.facts div + div{ border-left:1px solid var(--line); }
+.facts dt{ font-size:.8rem; color:var(--ink-soft); }
+.facts dd{ margin:2px 0 0; font-family:var(--head); font-size:clamp(1.3rem,4vw,1.7rem); line-height:1.2; }
+.facts dd small{ font-size:.6em; }
+
+/* ---------- 떡 (메뉴) ---------- */
+.menu{ display:grid; grid-template-columns:1fr 1fr; gap:26px 14px; }
+.item img{ width:100%; aspect-ratio:1/1; object-fit:cover; }
+.item h3{ font-size:1.35rem; margin:12px 0 2px; }
+.item p{ margin:0; font-size:.88rem; color:var(--ink-soft); line-height:1.65; }
+.note{ margin:28px 0 0; font-size:.9rem; color:var(--ink-soft); }
+.note a, .note-a{ color:var(--red-ink); font-weight:700; border-bottom:1px solid currentColor; }
+
+/* ---------- 선물·답례 (먹 바탕) ---------- */
+.ink{ margin-top:clamp(64px,10vw,112px); background:var(--ink); color:#fff; padding:clamp(56px,9vw,100px) 0; }
+.ink .vlabel{ color:#fff; } .ink .vlabel::after{ background:#fff; }
+.ink .sec-head p{ color:rgba(255,255,255,.78); }
+.occ{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 36px; padding:0; list-style:none; }
+.occ li{ padding:.42em .9em; border:1px solid rgba(255,255,255,.35); font-size:.88rem; }
+.gift-grid{ display:grid; gap:14px; grid-template-columns:1fr 1fr; }
+.gift-grid figure{ margin:0; }
+.gift-grid img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+.gift-grid figcaption{ margin-top:8px; font-size:.85rem; color:rgba(255,255,255,.78); }
+.gift-grid .wide{ grid-column:1 / -1; }
+.gift-grid .wide img{ aspect-ratio:16/10; }
+.sets{ margin:44px 0 0; border-top:1px solid rgba(255,255,255,.35); }
+.sets h3{ font-size:clamp(1.5rem,4.4vw,2.1rem); margin:28px 0 8px; }
+.sets > p{ margin:0 0 24px; color:rgba(255,255,255,.78); }
+
+/* ---------- 갤러리 ---------- */
+.gal{ display:grid; grid-template-columns:1fr 1fr; grid-auto-flow:dense; gap:8px; }
+.gal img{ width:100%; height:100%; aspect-ratio:1/1; object-fit:cover; }
+.gal figure{ position:relative; }
+.gal .tall{ grid-row:span 2; min-height:200px; }
+.gal .tall img{ position:absolute; inset:0; aspect-ratio:auto; }
+
+/* ---------- 발자취 (이력) ---------- */
+.ledger{ list-style:none; margin:0; padding:0; border-top:1px solid var(--ink); }
+.ledger li{ display:grid; grid-template-columns:64px 1fr; gap:14px; padding:16px 0; border-bottom:1px solid var(--line); }
+.ledger .yr{ font-family:var(--head); font-size:1.25rem; color:var(--red-ink); line-height:1.5; }
+
+/* ---------- 주문 ---------- */
+.order-grid{ display:grid; gap:36px; }
+.chan{ list-style:none; margin:0; padding:0; border-top:1px solid var(--ink); }
+.chan li{ border-bottom:1px solid var(--line); }
+.chan a{ display:grid; grid-template-columns:1fr auto; align-items:center; gap:2px 16px; padding:18px 0; }
+.chan b{ font-family:var(--head); font-weight:400; font-size:1.35rem; line-height:1.3; }
+.chan span{ grid-column:1; font-size:.88rem; color:var(--ink-soft); }
+.chan svg{ grid-column:2; grid-row:1 / span 2; width:20px; height:20px; color:var(--ink-soft); transition:transform .2s ease, color .2s ease; }
+@media (hover:hover){ .chan a:hover b{ color:var(--red-ink); } .chan a:hover svg{ color:var(--red); transform:translateX(4px); } }
+.guide{ margin:0; padding:24px; background:var(--wash); }
+.guide h3{ font-size:1.4rem; margin:0 0 10px; }
+.guide ul{ margin:0; padding:0; list-style:none; }
+.guide li{ position:relative; padding-left:16px; margin:.55em 0; font-size:.93rem; }
+.guide li::before{ content:""; position:absolute; left:0; top:.78em; width:6px; height:6px; background:var(--red); }
+
+/* ---------- 오시는 길 ---------- */
+.visit-grid{ display:grid; gap:30px; }
+.info{ margin:0; border-top:1px solid var(--ink); }
+.info .row{ display:grid; grid-template-columns:64px 1fr; gap:12px; padding:15px 0; border-bottom:1px solid var(--line); }
+.info dt{ font-weight:700; }
+.info dd{ margin:0; }
+.info dd small{ display:block; color:var(--ink-soft); font-size:.86rem; margin-top:2px; }
+.info a.tel{ font-weight:700; border-bottom:1px solid var(--red); font-variant-numeric:tabular-nums; }
+.acts{ display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
+.mapframe{ width:100%; aspect-ratio:4/3; border:1px solid var(--ink); display:block; background:var(--wash); }
+
+/* ---------- 푸터 ---------- */
+.foot{ margin-top:clamp(72px,11vw,128px); background:var(--ink); color:#fff; padding:48px 0 54px; }
+.foot .wrap{ display:grid; gap:22px; }
+.foot-logo{ width:170px; }
+.foot p{ margin:0; font-size:.86rem; color:rgba(255,255,255,.78); line-height:1.9; }
+.foot a{ border-bottom:1px solid rgba(255,255,255,.4); }
+
+/* ---------- 모션 (강제: 기기 '동작 줄이기'와 무관하게 재생 · 다올 지시) ---------- */
+.reveal{ opacity:0; transform:translateY(16px); transition:opacity .8s ease, transform .8s cubic-bezier(.22,.61,.36,1); }
+.reveal.in{ opacity:1; transform:none; }
+
+/* ---------- ≥720 ---------- */
+@media (min-width:720px){
+  .menu{ grid-template-columns:repeat(3,1fr); gap:40px 22px; }
+  .gift-grid{ grid-template-columns:repeat(3,1fr); }
+  .gift-grid .wide{ grid-column:auto; }
+  .gift-grid .wide img{ aspect-ratio:4/5; }
+  .gal{ grid-template-columns:repeat(4,1fr); gap:10px; }
+  .ledger li{ grid-template-columns:90px 1fr; }
+}
+/* ---------- ≥980 PC ---------- */
+@media (min-width:980px){
+  .hero-grid{ grid-template-columns:1fr 1.05fr; gap:64px; align-items:center; }
+  .hero-text{ gap:30px; }
+  .story-grid{ grid-template-columns:.85fr 1.15fr; gap:72px; align-items:center; }
+  .order-grid{ grid-template-columns:1.1fr .9fr; gap:64px; align-items:start; }
+  .visit-grid{ grid-template-columns:.9fr 1.1fr; gap:60px; align-items:start; }
+  .sec-head{ gap:34px; }
+  .foot .wrap{ grid-template-columns:auto 1fr; gap:48px; align-items:end; }
+}
+</style>
+</head>
+<body>
+<!-- ============ HEADER ============ -->
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="금정떡방앗간 처음으로"><img src="kj-logo.webp" alt="금정떡방앗간 KOREAN RICE CAKE" width="956" height="435" /></a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#story">이야기</a>
+      <a href="#menu">떡</a>
+      <a href="#gift">답례·선물</a>
+      <a href="#order">주문</a>
+      <a href="#visit">오시는 길</a>
+      <a class="btn" href="tel:0507-1397-7377">전화 주문</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-text reveal">
+        <span class="vlabel" aria-hidden="true">이대째 수제 떡집</span>
+        <div>
+          <h1>어머니의 스무 해를<br /><em>아들</em>이 잇습니다</h1>
+          <p class="lead">떡 제조 경력 20년 어머니의 손맛을 이어가고자, 대기업을 그만둔 아들이 함께 빚습니다. 국산 상급쌀과 천연재료로, 내 가족이 먹는다는 마음으로.</p>
+          <div class="hero-cta">
+            <a class="btn" href="tel:0507-1397-7377">전화 주문 0507-1397-7377</a>
+            <a class="btn line" href="https://naver.me/x7nJoH1t" target="_blank" rel="noopener">네이버 플레이스</a>
+          </div>
+          <p class="hero-meta"><span><b>영업</b>월–토 06:00–18:00</span><span><b>휴무</b>매주 일요일</span><span><b>위치</b>부산 동래 · 동래역 6번 출구</span></p>
+        </div>
+      </div>
+      <figure class="frame reveal" style="margin:0">
+        <img src="kj-gift-bojagi.webp" alt="쪽빛과 다홍 상자에 노리개를 달고 여러 가지 떡을 담은 금정떡방앗간 선물세트" width="1200" height="887" />
+        <span class="seal" aria-hidden="true">금정</span>
+      </figure>
+    </div>
+  </section>
+
+  <div class="roof" aria-hidden="true"><img src="kj-roof.webp" alt="" width="932" height="351" /></div>
+
+  <!-- ============ STORY ============ -->
+  <section class="sec" id="story" aria-labelledby="story-h" style="padding-top:clamp(28px,5vw,48px)">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="vlabel" aria-hidden="true">이야기</span>
+        <div>
+          <h2 id="story-h">2대째 이어가는<br />전통 수제 떡집</h2>
+        </div>
+      </div>
+      <div class="story-grid">
+        <div class="story-photo reveal"><img loading="lazy" src="kj-siru.webp" alt="금정떡방앗간 작업장에 층층이 쌓인 나무 떡 틀" width="1038" height="1200" /></div>
+        <div class="story-text reveal">
+          <p class="quote">항상 내 가족이 먹는다는 생각으로<br />정성을 다하겠습니다.</p>
+          <p>떡 제조 경력 20년, 어머니의 손맛을 잇고 싶어 아들이 대기업을 퇴사하고 방앗간에 들어왔습니다. 지금은 두 사람이 함께 떡을 빚습니다.</p>
+          <p>국산 상급쌀과 천연재료만 쓰는 바른 고집으로 정직하고 건강한 맛을 지키고, 위생과 청결에는 누구보다 철저합니다.</p>
+          <dl class="facts">
+            <div><dt>어머니의 떡 경력</dt><dd>20<small>년</small></dd></div>
+            <div><dt>이어 온 세대</dt><dd>2<small>대째</small></dd></div>
+            <div><dt>쌀</dt><dd>국산<small> 상급</small></dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="sec" id="menu" aria-labelledby="menu-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="vlabel" aria-hidden="true">우리 떡</span>
+        <div>
+          <h2 id="menu-h">정직하게 빚는 우리 떡</h2>
+          <p>국산 상급쌀과 천연재료로, 아침 여섯 시부터 방앗간을 엽니다.</p>
+        </div>
+      </div>
+      <div class="menu">
+        <article class="item reveal"><img loading="lazy" src="kj-songpyeon6.webp" alt="여섯 칸 상자에 빛깔별로 나누어 담은 송편" width="900" height="713" /><h3>송편</h3><p>여러 빛깔의 송편. 명절에는 선물세트로 준비합니다.</p></article>
+        <article class="item reveal"><img loading="lazy" src="kj-ssuk.webp" alt="접시에 담은 윤기 나는 쑥떡" width="900" height="900" /><h3>쑥떡</h3><p>쑥 향이 진하게 배어나는 떡.</p></article>
+        <article class="item reveal"><img loading="lazy" src="kj-garae.webp" alt="나무 도마 위에 올린 가래떡" width="899" height="900" /><h3>가래떡 · 떡국떡</h3><p>뽑아낸 가래떡과 썰어 낸 떡국떡. 떡국떡은 선물세트도 있습니다.</p></article>
+        <article class="item reveal"><img loading="lazy" src="kj-castella.webp" alt="카스테라 고물을 입힌 찹쌀떡을 반으로 갈라 팥소와 견과가 보이는 모습" width="900" height="806" /><h3>카스테라 찹쌀떡</h3><p>어머니의 손맛으로 만드는 수제 찹쌀떡.</p></article>
+        <article class="item reveal"><img loading="lazy" src="kj-yeongyang.webp" alt="밤과 콩, 견과를 넉넉히 넣은 영양찰떡" width="900" height="900" /><h3>영양찰떡</h3><p>밤·콩·견과를 넉넉히 넣어 든든한 찰떡.</p></article>
+        <article class="item reveal"><img loading="lazy" src="kj-tteokcake.webp" alt="여러 가지 떡을 둥글게 올린 떡케이크" width="900" height="900" /><h3>떡케이크</h3><p>생일·기념일·행사용 떡케이크, 문구를 넣어 맞춤 제작합니다.</p></article>
+      </div>
+      <p class="note">메뉴와 가격은 계절·주문에 따라 달라집니다. 가격표는 <a href="https://naver.me/x7nJoH1t" target="_blank" rel="noopener">네이버 플레이스</a>에서, 새 떡 소식은 <a href="https://www.instagram.com/kj_ricecake/" target="_blank" rel="noopener">인스타그램</a>에서 가장 먼저 확인하실 수 있습니다. 수제 식혜도 빚습니다.</p>
+    </div>
+  </section>
+
+  <!-- ============ GIFT (먹 바탕) ============ -->
+  <section class="ink" id="gift" aria-labelledby="gift-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="vlabel" aria-hidden="true">답례 · 선물</span>
+        <div>
+          <h2 id="gift-h">마음을 담는 날,<br />떡으로 전하세요</h2>
+          <p>떡마다 축하와 감사의 문구를 담은 스티커를 붙여 드립니다. 소량부터 회사·단체 대량 주문까지 가능합니다.</p>
+        </div>
+      </div>
+      <ul class="occ" aria-label="주문 가능한 떡">
+        <li>백일떡</li><li>첫돌떡</li><li>생일떡</li><li>개업떡</li><li>이사떡</li><li>고사떡</li>
+        <li>결혼답례떡</li><li>이바지떡</li><li>승진떡</li><li>인사발령떡</li><li>감사인사떡</li><li>창립기념떡</li>
+        <li>대회수상떡</li><li>제수용 제사떡</li><li>조문답례떡</li><li>어린이집·유치원 생일떡</li>
+      </ul>
+      <div class="gift-grid">
+        <figure class="reveal"><img loading="lazy" src="kj-dol.webp" alt="첫돌 축하 문구 스티커를 붙인 개별 포장 떡" width="900" height="675" /><figcaption>첫돌떡</figcaption></figure>
+        <figure class="reveal"><img loading="lazy" src="kj-baegil.webp" alt="百日 문구 스티커를 붙인 백일떡" width="900" height="773" /><figcaption>백일떡</figcaption></figure>
+        <figure class="reveal wide"><img loading="lazy" src="kj-chilsun.webp" alt="칠순을 축하드립니다 문구 스티커를 붙인 답례떡" width="900" height="900" /><figcaption>칠순 답례떡</figcaption></figure>
+      </div>
+      <div class="sets">
+        <h3>명절 선물세트</h3>
+        <p>설과 추석에는 송편·떡국떡·모둠떡 선물세트를 준비합니다. 수량이 많은 편이라 미리 예약해 주세요.</p>
+        <div class="gift-grid">
+          <figure class="reveal"><img loading="lazy" src="kj-gift-black.webp" alt="검은 상자에 안내문을 넣은 금정떡방앗간 선물세트" width="900" height="675" /><figcaption>선물세트 상자</figcaption></figure>
+          <figure class="reveal"><img loading="lazy" src="kj-tteokguk-set.webp" alt="떡국떡과 빛깔 떡국떡을 칸칸이 담은 새해 선물세트" width="900" height="900" /><figcaption>떡국떡 선물세트</figcaption></figure>
+          <figure class="reveal wide"><img loading="lazy" src="kj-songpyeon-box.webp" alt="상자 가득 빛깔별로 줄지어 담은 송편" width="900" height="900" /><figcaption>송편 선물세트</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="sec" id="gallery" aria-labelledby="gallery-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="vlabel" aria-hidden="true">방앗간</span>
+        <div>
+          <h2 id="gallery-h">오늘도 방앗간에서</h2>
+          <p>더 많은 떡과 주문 이야기는 <a class="note-a" href="https://blog.naver.com/count_down" target="_blank" rel="noopener">블로그</a>에 차곡차곡 쌓아 두었습니다.</p>
+        </div>
+      </div>
+      <div class="gal">
+        <figure class="tall reveal" style="margin:0"><img loading="lazy" src="kj-gift-tassel.webp" alt="노리개를 단 상자에 견과 떡과 흑임자 떡을 담은 선물세트" width="900" height="675" /></figure>
+        <figure class="reveal" style="margin:0"><img loading="lazy" src="kj-ssuk-close.webp" alt="가까이서 본 쑥떡의 결" width="900" height="900" /></figure>
+        <figure class="reveal" style="margin:0"><img loading="lazy" src="kj-yakbap.webp" alt="잣과 건포도, 견과를 올린 떡" width="899" height="900" /></figure>
+        <figure class="tall reveal" style="margin:0"><img loading="lazy" src="kj-songpyeon.webp" alt="하양·노랑·초록·분홍·보라 빛깔별로 줄지어 담은 송편" width="900" height="701" /></figure>
+        <figure class="reveal" style="margin:0"><img loading="lazy" src="kj-pat.webp" alt="고물을 두툼하게 올린 떡의 단면" width="900" height="900" /></figure>
+        <figure class="reveal" style="margin:0"><img loading="lazy" src="kj-ssuk-bite.webp" alt="팥소가 가득 든 쑥떡을 반으로 가른 모습" width="900" height="900" /></figure>
+        <figure class="reveal" style="margin:0"><img loading="lazy" src="kj-dap3.webp" alt="세 가지 떡을 한 상자에 담은 답례떡" width="900" height="675" /></figure>
+        <figure class="reveal" style="margin:0"><img loading="lazy" src="kj-yeongyang-hand.webp" alt="손에 든 영양찰떡 한 조각" width="900" height="900" /></figure>
+        <figure class="reveal" style="margin:0"><img loading="lazy" src="kj-set-mix.webp" alt="떡국떡과 빛깔 떡을 칸칸이 나누어 담은 선물세트" width="900" height="675" /></figure>
+        <figure class="reveal" style="margin:0"><img loading="lazy" src="kj-injeolmi.webp" alt="콩고물을 묻혀 가지런히 늘어놓은 떡" width="900" height="675" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECORD ============ -->
+  <section class="sec" id="record" aria-labelledby="record-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="vlabel" aria-hidden="true">발자취</span>
+        <div>
+          <h2 id="record-h">동네에서 먼저 알아봐 주셨습니다</h2>
+        </div>
+      </div>
+      <ol class="ledger">
+        <li class="reveal"><span class="yr">2025</span><span>부산중구진로교육지원센터 · 떡 제조 진로교육 업무협약</span></li>
+        <li class="reveal"><span class="yr">2024</span><span>부산일보 공식 유튜브 채널 「창업자득」 출연</span></li>
+        <li class="reveal"><span class="yr">2024</span><span>고향사랑기부제 동래구 공식 답례품 공급 업체</span></li>
+        <li class="reveal"><span class="yr">2023</span><span>동래구자원봉사센터 추석 송편 만들기 행사 외부 강사</span></li>
+        <li class="reveal"><span class="yr">자격</span><span>국가기술자격 떡제조기능사 보유 · 수제 식혜 식약처 자가품질검사 통과</span></li>
+        <li class="reveal"><span class="yr">공급</span><span>부산경찰청어린이집 떡 공급 업체</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ ORDER ============ -->
+  <section class="sec" id="order" aria-labelledby="order-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="vlabel" aria-hidden="true">주문</span>
+        <div>
+          <h2 id="order-h">주문은 이렇게 하세요</h2>
+          <p>주문이 많은 편이라, 원하시는 날짜가 있다면 미리 연락 주시면 좋습니다.</p>
+        </div>
+      </div>
+      <div class="order-grid">
+        <ul class="chan reveal">
+          <li><a href="tel:0507-1397-7377"><b>전화 0507-1397-7377</b><span>답례떡 · 단체 · 대량 주문 상담</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="https://naver.me/x7nJoH1t" target="_blank" rel="noopener"><b>네이버 플레이스</b><span>가격표 · 위치 · 영업시간</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="https://smartstore.naver.com/kjddeokbang" target="_blank" rel="noopener"><b>스마트스토어</b><span>온라인 주문</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="https://www.instagram.com/kj_ricecake/" target="_blank" rel="noopener"><b>인스타그램</b><span>@kj_ricecake · 오늘의 떡 소식</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="https://blog.naver.com/count_down" target="_blank" rel="noopener"><b>블로그</b><span>퇴사한 떡집 아들의 기록 · 명절 주문 안내</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        </ul>
+        <aside class="guide reveal" aria-label="배달 안내">
+          <h3>배달 안내</h3>
+          <ul>
+            <li>온천동 · 사직동 · 거제동 등 가게에서 2km 이내는 무료로 배달해 드립니다.</li>
+            <li>그 밖의 지역은 거리에 따라 배송비가 책정됩니다.</li>
+            <li>회사 · 단체 · 대량 주문 가능합니다.</li>
+            <li>온누리상품권을 사용하실 수 있습니다.</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section class="sec" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="vlabel" aria-hidden="true">오시는 길</span>
+        <div>
+          <h2 id="visit-h">동래역에서 걸어 15분</h2>
+          <p>미남초등학교 후문에서 50m 안쪽에 있습니다.</p>
+        </div>
+      </div>
+      <div class="visit-grid">
+        <div class="reveal">
+          <dl class="info">
+            <div class="row"><dt>주소</dt><dd>부산 동래구 충렬대로108번길 73 1층<small>동래역 6번 출구에서 약 450m</small></dd></div>
+            <div class="row"><dt>영업</dt><dd>월–토 06:00 – 18:00<small>매주 일요일 정기휴무</small></dd></div>
+            <div class="row"><dt>전화</dt><dd><a class="tel" href="tel:0507-1397-7377">0507-1397-7377</a></dd></div>
+          </dl>
+          <div class="acts">
+            <a class="btn" href="https://naver.me/x7nJoH1t" target="_blank" rel="noopener">네이버 지도로 보기</a>
+            <a class="btn line" href="tel:0507-1397-7377">전화하기</a>
+          </div>
+        </div>
+        <iframe class="mapframe reveal" src="https://www.google.com/maps?q=%EB%B6%80%EC%82%B0%20%EB%8F%99%EB%9E%98%EA%B5%AC%20%EC%B6%A9%EB%A0%AC%EB%8C%80%EB%A1%9C108%EB%B2%88%EA%B8%B8%2073&output=embed" title="금정떡방앗간 위치 지도 · 부산 동래구 충렬대로108번길 73" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img class="foot-logo" src="kj-logo-w.webp" alt="금정떡방앗간" width="956" height="435" loading="lazy" />
+    <div>
+      <p>2대째 이어가는 전통 수제 떡집 · 부산 동래구 충렬대로108번길 73 1층</p>
+      <p>월–토 06:00–18:00 · 일요일 휴무 · <a href="tel:0507-1397-7377">0507-1397-7377</a> · <a href="https://www.instagram.com/kj_ricecake/" target="_blank" rel="noopener">@kj_ricecake</a></p>
+      <p>© 2026 금정떡방앗간</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* 1) 나타나기 효과: 화면에 들어오면 재생, 2.4초 안전망 */
+  var items=[].slice.call(document.querySelectorAll('.reveal'));
+  var show=function(el){ el.classList.add('in'); };
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ show(e.target); io.unobserve(e.target); } }); }, {threshold:.06});
+    items.forEach(function(el){ io.observe(el); });
+    setTimeout(function(){ items.forEach(show); }, 2400);
+  } else { items.forEach(show); }
+
+  /* 2) 부드러운 앵커 스크롤: rAF로 강제(동작 줄이기 설정에도 동작), 스티키 헤더 높이만큼 보정 */
+  var head=document.querySelector('.site-head');
+  var ease=function(t){ return t<.5 ? 4*t*t*t : 1-Math.pow(-2*t+2,3)/2; };
+  document.addEventListener('click', function(ev){
+    var a=ev.target.closest && ev.target.closest('a[href^="#"]');
+    if(!a) return;
+    var id=a.getAttribute('href'); if(id.length<2) return;
+    var target=id==='#top' ? document.body : document.querySelector(id);
+    if(!target) return;
+    ev.preventDefault();
+    var off=(head ? head.offsetHeight : 0) + 6;
+    var startY=window.pageYOffset;
+    var endY=target===document.body ? 0 : Math.max(0, target.getBoundingClientRect().top + startY - off);
+    var dist=endY-startY, dur=Math.min(900, Math.max(420, Math.abs(dist)*.45)), t0=null;
+    function step(ts){ if(t0===null) t0=ts; var p=Math.min(1,(ts-t0)/dur); window.scrollTo(0, startY+dist*ease(p)); if(p<1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+    if(history.replaceState) history.replaceState(null,'',id);
+  });
+})();
+</script>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</body>
+</html>
