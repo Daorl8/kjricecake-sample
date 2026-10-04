@@ -126,7 +126,7 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; letter-spacing:-.0
 .hero-text{ display:grid; grid-template-columns:auto 1fr; gap:20px; align-items:start; }
 .hero-text .vlabel{ font-size:1rem; color:var(--red-ink); }
 .hero-text .vlabel::after{ background:var(--red-ink); }
-.hero h1{ font-size:clamp(2.5rem,8.6vw,4.6rem); line-height:1.22; }
+.hero h1{ font-size:clamp(1.85rem,6.4vw,3.2rem); line-height:1.32; }
 .hero h1 em{ font-style:normal; color:var(--red); }
 .hero .lead{ margin:22px 0 0; font-size:clamp(1rem,2.6vw,1.12rem); color:var(--ink-soft); max-width:30em; }
 .hero-cta{ display:flex; flex-wrap:wrap; gap:10px; margin-top:30px; }
@@ -147,12 +147,6 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; letter-spacing:-.0
 .story-photo img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
 .story-text p{ margin:0 0 1.1em; }
 .story-text .quote{ font-family:var(--head); font-size:clamp(1.45rem,4vw,1.9rem); line-height:1.45; margin:0 0 22px; padding-left:18px; border-left:3px solid var(--red); }
-.facts{ display:grid; grid-template-columns:repeat(3,1fr); margin:30px 0 0; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
-.facts div{ padding:16px 8px; text-align:center; }
-.facts div + div{ border-left:1px solid var(--line); }
-.facts dt{ font-size:.8rem; color:var(--ink-soft); }
-.facts dd{ margin:2px 0 0; font-family:var(--head); font-size:clamp(1.3rem,4vw,1.7rem); line-height:1.2; }
-.facts dd small{ font-size:.6em; }
 
 /* ---------- 떡 (메뉴) ---------- */
 .menu{ display:grid; grid-template-columns:1fr 1fr; gap:26px 14px; }
@@ -272,10 +266,11 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; letter-spacing:-.0
       <div class="hero-text reveal">
         <span class="vlabel" aria-hidden="true">이대째 수제 떡집</span>
         <div>
-          <h1>어머니의 스무 해를<br /><em>아들</em>이 잇습니다</h1>
-          <p class="lead">떡 제조 경력 20년 어머니의 손맛을 이어가고자, 대기업을 그만둔 아들이 함께 빚습니다. 국산 상급쌀과 천연재료로, 내 가족이 먹는다는 마음으로.</p>
+          <h1>떡집경력 20년 어머니의 손맛과<br />대기업 퇴사한 <em>아들</em>이<br />함께 만들어가는 떡집 이야기</h1>
+          <p class="lead">떡 제조 경력 20년 어머니의 손맛을 이어가고자, 대기업을 그만둔 아들이 함께 빚습니다. 국산 상급쌀과 천연재료로, 내 가족이 먹는다는 마음으로 만듭니다.</p>
           <div class="hero-cta">
             <a class="btn" href="tel:0507-1397-7377">전화 주문 0507-1397-7377</a>
+            <a class="btn line" href="https://open.kakao.com/o/s9QyTToe" target="_blank" rel="noopener">카카오톡 상담</a>
             <a class="btn line" href="https://naver.me/x7nJoH1t" target="_blank" rel="noopener">네이버 플레이스</a>
           </div>
           <p class="hero-meta"><span><b>영업</b>월–토 06:00–18:00</span><span><b>휴무</b>매주 일요일</span><span><b>위치</b>부산 동래 · 동래역 6번 출구</span></p>
@@ -305,11 +300,6 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; letter-spacing:-.0
           <p class="quote">항상 내 가족이 먹는다는 생각으로<br />정성을 다하겠습니다.</p>
           <p>떡 제조 경력 20년, 어머니의 손맛을 잇고 싶어 아들이 대기업을 퇴사하고 방앗간에 들어왔습니다. 지금은 두 사람이 함께 떡을 빚습니다.</p>
           <p>국산 상급쌀과 천연재료만 쓰는 바른 고집으로 정직하고 건강한 맛을 지키고, 위생과 청결에는 누구보다 철저합니다.</p>
-          <dl class="facts">
-            <div><dt>어머니의 떡 경력</dt><dd>20<small>년</small></dd></div>
-            <div><dt>이어 온 세대</dt><dd>2<small>대째</small></dd></div>
-            <div><dt>쌀</dt><dd>국산<small> 상급</small></dd></div>
-          </dl>
         </div>
       </div>
     </div>
@@ -400,7 +390,7 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; letter-spacing:-.0
       <div class="sec-head">
         <span class="vlabel" aria-hidden="true">발자취</span>
         <div>
-          <h2 id="record-h">동네에서 먼저 알아봐 주셨습니다</h2>
+          <h2 id="record-h">2대째 이어가는 전통 수제 떡집</h2>
         </div>
       </div>
       <ol class="ledger">
@@ -421,12 +411,13 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; letter-spacing:-.0
         <span class="vlabel" aria-hidden="true">주문</span>
         <div>
           <h2 id="order-h">주문은 이렇게 하세요</h2>
-          <p>주문이 많은 편이라, 원하시는 날짜가 있다면 미리 연락 주시면 좋습니다.</p>
+          <p>주문이 많은 편이라, 원하시는 날짜가 있다면 미리 연락 주시면 감사하겠습니다.</p>
         </div>
       </div>
       <div class="order-grid">
         <ul class="chan reveal">
           <li><a href="tel:0507-1397-7377"><b>전화 0507-1397-7377</b><span>답례떡 · 단체 · 대량 주문 상담</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          <li><a href="https://open.kakao.com/o/s9QyTToe" target="_blank" rel="noopener"><b>카카오톡 상담</b><span>오픈채팅 1:1 문의</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
           <li><a href="https://naver.me/x7nJoH1t" target="_blank" rel="noopener"><b>네이버 플레이스</b><span>가격표 · 위치 · 영업시간</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
           <li><a href="https://smartstore.naver.com/kjddeokbang" target="_blank" rel="noopener"><b>스마트스토어</b><span>온라인 주문</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
           <li><a href="https://www.instagram.com/kj_ricecake/" target="_blank" rel="noopener"><b>인스타그램</b><span>@kj_ricecake · 오늘의 떡 소식</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
